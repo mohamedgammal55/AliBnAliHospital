@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title> مستشفى علي بن علي </title>
+  <!-- icon -->
+  <link rel="icon" type="image/x-icon" href="img/favico.ico">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap-rtl.css">
+  <!-- MDBootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <!-- Font Awesome Stars-->
+  <link rel="stylesheet" href="css/fontawesome-stars.css">
+  <!-- odometer -->
+  <link rel="stylesheet" href="css/odometer.min.css">
+  <!-- flatIcon -->
+  <link rel="stylesheet" href="css/flaticon.css">
+  <!-- dropify -->
+  <link rel="stylesheet" href="css/dropify.min.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="css/swiper.css">
+  <!-- select2 -->
+  <link rel="stylesheet" href="css/select2.css">
+  <!-- animate -->
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- img gallery -->
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <!-- Custom style  -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- fonts  -->
+  <link href="https://fonts.تصفحogleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ================ spinner ================= -->
+  <div id="loader-wrapper">
+    <div id="loader">
+      <div class="loader-inner"></div>
+    </div>
+  </div>
+  <!-- ================ spinner ================= -->
+
+
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////   nav-bar     //////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+
+
+  <div id="Header" class="main-header"></div>
+
+
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////          //////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////          //////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <div class="doctors-page">
+    <div class="banner-profile py-5  d-flex align-items-center justify-content-center">
+
+
+      <div class="search">
+        <form>
+          <div class=" d-flex justify-content-center align-items-center">
+            <h5> <span class="flaticon-stethoscope"></span> ابحث</h5>
+          </div>
+          <div class="row">
+            <div class=" col-lg-2 col-sm-6 mb-1 ">
+              <div class="form-group">
+                <label for="Specialization"> <span class="flaticon-medal"><i class="fad fa-stethoscope"></i></span> اختر
+                  التخصص </label>
+                <select class=" select2" id="Specialization" name="Specialization">
+                  <option> الكل </option>
+                  <option> جراحة اتجميل </option>
+                  <option> جراحة الجهاز الهضمي </option>
+                  <option> جراحة المناظير </option>
+                  <option> جراحة التخسيس </option>
+                  <option> جراحة الجهاز التنفسي </option>
+                </select>
+              </div>
+            </div>
+            <div class=" col-lg-2 col-sm-6 mb-1 ">
+              <div class="form-group">
+                <label for="city"> <span class="flaticon-cityscape"><i class="fad fa-city"></i></span> في مدينة </label>
+                <select class=" select2 " id="save" name="city">
+                  <option> الرياض</option>
+                  <option> أبها </option>
+                  <option> الدمام </option>
+                  <option> جدة </option>
+                  <option> نجران </option>
+                  <option> مكة المكرمة </option>
+                  <option> الزهران </option>
+                  <option> المدينة المنورة </option>
+                  <option> الدمام </option>
+                  <option> جدة </option>
+                  <option> الخبر </option>
+                </select>
+              </div>
+            </div>
+            <div class=" col-lg-2 col-sm-6 mb-1 d-none-mobile">
+              <div class="form-group">
+                <label for="city"> <span class="flaticon-cityscape"><i class="fad fa-city"></i></span> في حي </label>
+                <select class=" select2 " id="postal" name="city">
+                  <option> الملك فهد</option>
+                  <option> الورود </option>
+                  <option> المصيف </option>
+                  <option> البديعة </option>
+                  <option> الإزدهار </option>
+                  <option> الغدير </option>
+                  <option> الواحة </option>
+                </select>
+              </div>
+            </div>
+            <div class=" col-lg-2 col-sm-6 mb-1 ">
+              <div class="form-group">
+                <label for="city"> <span class="flaticon-cityscape"><i class="fad fa-life-ring"></i></span> التأمين
+                </label>
+                <select class=" select2 " id="city" name="city">
+                  <option> لا أريد</option>
+                  <option> بوبا الفئة الذهبية </option>
+                  <option> أمانة </option>
+                  <option> تكافل الراجحي </option>
+                  <option> بروج </option>
+                  <option> الصقر </option>
+                </select>
+              </div>
+            </div>
+            <div class=" col-lg-2 col-sm-6 mb-1 ">
+              <div class="form-group">
+
+                <label for="DocName"> <span class="flaticon-identification"><i class="fad fa-user-md"></i></span> ابحث
+                  عن دكتور </label>
+                <input type="text" name="DocName" id="DocName" class=" form-control" placeholder="اكتب هنا">
+              </div>
+            </div>
+            <div class=" col-lg-2 col-sm-6 mb-1  d-flex justify-content-center align-items-center">
+              <button type="submit"> <span class="flaticon-loupe"><i class="fal fa-search"></i></span> بحث </button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+
+
+
+    <div class="doctors mt-5">
+      <div class="container">
+        <div class="row">
+          <div class=" col-lg-6 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="contents  z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/doctors/doctor1.png" alt="" srcset="">
+                </div>
+                <div class="text">
+                  <a href="" class="phone-icon"><i class="fas fa-phone-alt"></i></a>
+                  <a href="" class="video-icon"><i class="fas fa-video"></i></a>
+                  <a class=" py-2 font-weight-bold text-center"> أحمد شكري </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> استشاري الأشعة التشخيصية
+
+
+                    </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class=" col-lg-6 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="contents z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/doctors/doctor2.png" alt="" srcset="">
+                </div>
+                <div class="text">
+                  <a href="" class="phone-icon"><i class="fas fa-phone-alt"></i></a>
+                  <a href="" class="video-icon"><i class="fas fa-video"></i></a>
+                  <a class=" py-2 font-weight-bold text-center"> حسام ابو موسى </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> استشاري الأمراض الباطنية </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class=" col-lg-6 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="contents z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/doctors/doctor3.png" alt="" srcset="">
+                </div>
+                <div class="text">
+                  <a href="" class="phone-icon"><i class="fas fa-phone-alt"></i></a>
+                  <a href="" class="video-icon"><i class="fas fa-video"></i></a>
+                  <a class=" py-2 font-weight-bold text-center"> لوسيلة صالح عبدالله </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i>استشاري امراض النساء والولادة
+
+
+                    </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class=" col-lg-6 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="contents  z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/doctors/doctor4.png" alt="" srcset="">
+                </div>
+                <div class="text">
+                  <a href="" class="phone-icon"><i class="fas fa-phone-alt"></i></a>
+                  <a href="" class="video-icon"><i class="fas fa-video"></i></a>
+                  <a class=" py-2 font-weight-bold text-center"> أسامة يوسف نصر نعيم </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> أنف وأذن </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class=" col-lg-6 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="contents z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/doctors/doctor5.png" alt="" srcset="">
+                </div>
+                <div class="text">
+                  <a href="" class="phone-icon"><i class="fas fa-phone-alt"></i></a>
+                  <a href="" class="video-icon"><i class="fas fa-video"></i></a>
+                  <a class=" py-2 font-weight-bold text-center"> أحمد محمد عبدالعزيز </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> أنف وأذن </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class=" col-lg-6 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="contents z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/doctors/doctor6.png" alt="" srcset="">
+                </div>
+                <div class="text">
+                  <a href="" class="phone-icon"><i class="fas fa-phone-alt"></i></a>
+                  <a href="" class="video-icon"><i class="fas fa-video"></i></a>
+                  <a class=" py-2 font-weight-bold text-center"> شادي صلاح الدين شاهين </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> أنف وأذن </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class=" col-lg-6 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="contents  z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/doctors/doctor7.png" alt="" srcset="">
+                </div>
+                <div class="text">
+                  <a href="" class="phone-icon"><i class="fas fa-phone-alt"></i></a>
+                  <a href="" class="video-icon"><i class="fas fa-video"></i></a>
+                  <a class=" py-2 font-weight-bold text-center"> محمد السعيد </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> أنف وأذن </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class=" col-lg-6 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="contents z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/doctors/doctor8.png" alt="" srcset="">
+                </div>
+                <div class="text">
+                  <a href="" class="phone-icon"><i class="fas fa-phone-alt"></i></a>
+                  <a href="" class="video-icon"><i class="fas fa-video"></i></a>
+                  <a class=" py-2 font-weight-bold text-center"> صفاء عوض احمد </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> أنف وأذن </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class=" col-lg-6 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="contents z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/doctors/doctor9.png" alt="" srcset="">
+                </div>
+                <div class="text">
+                  <a href="" class="phone-icon"><i class="fas fa-phone-alt"></i></a>
+                  <a href="" class="video-icon"><i class="fas fa-video"></i></a>
+                  <a class=" py-2 font-weight-bold text-center"> زينب علي بابكر </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> أنف وأذن </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class=" col-lg-6 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="contents  z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/doctors/doctor10.png" alt="" srcset="">
+                </div>
+                <div class="text">
+                  <a href="" class="phone-icon"><i class="fas fa-phone-alt"></i></a>
+                  <a href="" class="video-icon"><i class="fas fa-video"></i></a>
+                  <a class=" py-2 font-weight-bold text-center"> ثناء مصطفى قاسم </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> أنف وأذن </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class=" col-lg-6 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="contents z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/doctors/doctor11.png" alt="" srcset="">
+                </div>
+                <div class="text">
+                  <a href="" class="phone-icon"><i class="fas fa-phone-alt"></i></a>
+                  <a href="" class="video-icon"><i class="fas fa-video"></i></a>
+                  <a class=" py-2 font-weight-bold text-center"> الهام السيد الظاهر </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> أنف وأذن </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class=" col-lg-6 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="contents z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/doctors/doctor12.png" alt="" srcset="">
+                </div>
+                <div class="text">
+                  <a href="" class="phone-icon"><i class="fas fa-phone-alt"></i></a>
+                  <a href="" class="video-icon"><i class="fas fa-video"></i></a>
+                  <a class=" py-2 font-weight-bold text-center"> وداد محمد العطاس </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> أنف وأذن </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+
+
+
+          <div class=" col-lg-4 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="new-contents z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/ايمن_عزوز.jpeg" alt="" srcset="">
+                </div>
+                <div class="text">
+
+                  <a class=" py-2 font-weight-bold text-center"> وداد محمد العطاس </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> أنف وأذن </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+
+                <div class="call-buttons">
+                  <button class="btn call"><i class="fas fa-phone-alt"></i></button>
+                  <button class="btn"><i class="fas fa-video"></i></button>
+              
+                </div>
+
+               </div>
+            </a>
+
+          </div>
+
+          <div class=" col-lg-4 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="new-contents z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/ايمن_عزوز.jpeg" alt="" srcset="">
+                </div>
+                <div class="text">
+
+                  <a class=" py-2 font-weight-bold text-center"> وداد محمد العطاس </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> أنف وأذن </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+
+                <div class="call-buttons">
+                  <button class="btn call"><i class="fas fa-phone-alt"></i></button>
+                  <button class="btn"><i class="fas fa-video"></i></button>
+              
+                </div>
+
+               </div>
+            </a>
+
+          </div>
+
+          <div class=" col-lg-4 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="new-contents z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/ايمن_عزوز.jpeg" alt="" srcset="">
+                </div>
+                <div class="text">
+
+                  <a class=" py-2 font-weight-bold text-center"> وداد محمد العطاس </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> أنف وأذن </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+
+                <div class="call-buttons">
+                  <button class="btn call"><i class="fas fa-phone-alt"></i></button>
+                  <button class="btn"><i class="fas fa-video"></i></button>
+              
+                </div>
+
+               </div>
+            </a>
+
+          </div>
+
+          <div class=" col-lg-4 mb-3">
+            <a href="doctor-profile.html">
+              <div data-aos="flip-down" class="new-contents z-depth-1">
+                <div class="img d-flex justify-content-center">
+                  <img src="img/ايمن_عزوز.jpeg" alt="" srcset="">
+                </div>
+                <div class="text">
+
+                  <a class=" py-2 font-weight-bold text-center"> وداد محمد العطاس </a>
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-medal"></i> أنف وأذن </p>
+                    <p> <span class="font-weight-bold text-danger">4.8 </span> / 5 <a href=""> <i
+                          class="fad fa-star"></i> </a> </p>
+                  </div>
+
+
+                  <div class="my-custom-div mt-2">
+                    <p> <i class="fad fa-map-marker-alt"></i> مكة / شارع الملك </p>
+                    <p> 400 كجم </p>
+                  </div>
+                </div>
+
+                <div class="call-buttons">
+                  <button class="btn call"><i class="fas fa-phone-alt"></i></button>
+                  <button class="btn"><i class="fas fa-video"></i></button>
+              
+                </div>
+
+               </div>
+            </a>
+
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////  footer  //////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <div id="footer"></div>
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--/////////////////////////////JavaScript/////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <!--////////////////////////////////////////////////////////////////////////////////-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mdb.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/dropify.min.js"></script>
+  <script src="js/jquery.appear.min.js"></script>
+  <script src="js/odometer.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/select2.js"></script>
+  <script src="js/fontawesome-pro.js"></script>
+  <script src="js/stars.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $('#Header').load("Header.html");
+    $('#footer').load("Footer.html");
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
